@@ -1,0 +1,66 @@
+.footer {
+    background-color: #05113d;
+    position: relative;
+    clip-path: ellipse(81% 79% at 50% 86%);
+}
+
+.footer__main {
+    padding: 80px 0px;
+    background-color: #05113d;
+    /* height: 500px; */
+}
+
+/* .footer__card {
+    background-image: url("http://pixner.net/boleto/demo/assets/images/newslater/newslater-bg01.jpg");
+    bottom: 0;
+    content: "";
+    left: 0;
+    z-index: 999;
+    opacity: .8;
+    position: absolute;
+    right: 0;
+    top: 0;
+} */
+
+.footer__info {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer__logo {
+    width: 150px;
+}
+
+.footer__social {
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    align-items: center;
+    gap: 10px;
+}
+
+.footer__icon {
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    padding: 5px 10px;
+}
+
+.footer__bottom {
+    border-top: 1px solid #999;
+    padding-top: 25px;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    bottom: 30px;
+    color: #FFF;
+}
+
+.footer__terms {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}

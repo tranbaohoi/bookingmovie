@@ -1,0 +1,125 @@
+.bg__login {
+    height: 100vh;
+    /* width: 100vh; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("https://movie-booking-project.vercel.app/img/bgAuth.jpg");
+    background-position: center;
+    background-size: contain;
+}
+
+.login__container {
+    position: relative;
+    padding: 30px 24px 10px;
+    width: 400px;
+    background-image: linear-gradient(to bottom,
+            rgba(20, 50, 93, 0.9),
+            rgba(8, 22, 48, 0.9));
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
+    border-radius: 6px;
+    z-index: 1000;
+}
+
+.login__title {
+    color: #fff;
+    text-align: center;
+}
+
+.login__logo {
+    width: 208px;
+}
+
+.login__title--text {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    font-weight: 500;
+    margin-top: 16px;
+}
+
+.login__modal {
+    height: fit-content;
+    position: relative;
+}
+
+.inputBox {
+    margin-left: auto;
+    margin-right: auto;
+    width: 320px;
+    height: 46px;
+    margin-top: 28px;
+    position: relative;
+}
+
+.login__modal .inputBox>input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    border: 1px solid black;
+    padding: 8px 12px;
+    border-radius: 4px;
+    outline: none;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.login__modal .inputBox>span {
+    position: absolute;
+    top: 1px;
+    left: 1px;
+    padding: 8px 12px;
+    display: inline-block;
+    font-size: 14px;
+    color: rgba(8, 22, 48, 0.9);
+    /* color: #fff; */
+    font-weight: 500;
+    transition: 0.5s;
+    pointer-events: none;
+}
+
+.inputBox .login__button {
+    width: 100%;
+    height: 100%;
+    display: block;
+    color: #fff;
+    background-color: rgb(62, 99, 182);
+    border-color: rgb(62, 99, 182);
+    padding: 8px 12px;
+    border-radius: 6px;
+}
+
+.login__modal .inputBox>input:focus~span, .login__modal .inputBox>input:valid~span {
+    transform: translateX(-10px) translateY(-32px);
+    font-size: 14px;
+    color: white;
+}
+
+.login__button span {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5rem;
+}
+
+.input__register {
+    text-align: center;
+    color: #fff;
+}
+
+.input__register a {
+    color: rgb(59, 130, 246);
+    transition: all 0.5s;
+    margin-left: 8px;
+}
+
+.input__register:hover a {
+    color: orange;
+}
+
+.login__close {
+    position: absolute;
+    font-size: 50px;
+    top: -37px;
+    right: -25px;
+    color: #fff;
+}

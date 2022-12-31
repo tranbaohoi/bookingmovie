@@ -1,0 +1,131 @@
+.movie__card {
+    color: #fff;
+    margin: 20px 20px;
+}
+
+.movie__play {
+    position: relative;
+
+}
+
+.movie__desc {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.movie__img {
+    height: 100%;
+    width: 100%;
+}
+
+.movie__img--overlay {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    background: linear-gradient(0deg, #000, transparent);
+    opacity: 0;
+    transition: all .5s ease;
+}
+
+.movie__trailer--btn {
+    width: 60px;
+    position: absolute;
+    color: #fff;
+    height: 60px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    padding: 6px;
+    text-align: center;
+    transition: all .5s ease;
+    opacity: 0;
+}
+
+.trailer__btn {
+    cursor: pointer;
+    position: absolute;
+    font-size: 60px;
+    color: white;
+    background-color: var(--primary-color);
+    overflow: hidden;
+    border-radius: 50%;
+    max-width: 100%;
+    width: 90px;
+    height: 90px;
+    transition: 0.5s;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.movie__trailer--btn:hover {
+    background-color: rgba(249, 171, 0, 0.5);
+}
+
+.movie__play:hover .movie__trailer--btn {
+    opacity: 1;
+    transform: translate(-50%, -50%), scale(1.1);
+}
+
+.movie__name {
+    font-weight: 600;
+    height: 50px;
+}
+
+.movie__C {
+    border: 1px solid #666;
+    padding: 2px 4px;
+}
+
+.movie__info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+
+.movie__book {
+    background: orange;
+    text-align: center;
+    border-radius: 5px;
+    font-weight: 600;
+    width: 100%;
+    padding: 15px 0px;
+    cursor: pointer;
+    display: none;
+    margin-top: 20px;
+}
+
+.movie__choice {
+    margin-top: 40px;
+}
+
+.movie__book:hover {
+    color: #fff !important;
+}
+
+.movie__card:hover>.movie__desc,
+.movie__card:hover>.movie__name {
+    display: none;
+}
+
+.movie__card:hover>.movie__book {
+    display: block;
+}
+
+.movie__card:hover {
+    transition: all .5 ease-in-out;
+}
+
+
+.ReactModal__Overlay--after-open {
+    background-color: rgba(0, 0, 0, 0.7) !important;
+}
+
+.ReactModal__Content .ReactModal__Content--after-open {
+    background: transparent !important;
+}

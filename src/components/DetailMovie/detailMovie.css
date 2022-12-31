@@ -1,0 +1,112 @@
+.movie__detail {
+    background-color: #001932;
+    color: #fff;
+    /* min-height: 1000px; */
+    /* position: relative; */
+}
+
+.detail__banner {
+    /* background-image: "url('http://pixner.net/boleto/demo/assets/images/banner/banner03.jpg')"; */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 320px;
+}
+
+.detailmovie__info {
+    /* position: absolute; */
+    padding-top: 120px;
+    top: 120px;
+    width: 100%;
+}
+
+.movie__image {
+    border-radius: 5px;
+    height: 100%;
+    width: 100%;
+}
+
+.movie__content {
+    margin-top: 20px;
+}
+
+.movie__name {
+    color: #fff;
+}
+
+.movie__category {
+    border: 1px solid #9aace5;
+    width: 75px;
+    padding: 5px 4px;
+    border-radius: 10px;
+}
+
+.movie__social {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.movie__time {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.movie__lang {
+    padding-top: 30px;
+}
+
+.movie__time i {
+    margin-left: 5px;
+}
+
+.movie__cinema {
+    padding-top: 260px;
+}
+
+.movie__cinema h2 {
+    color: #fff;
+}
+
+.cinema__name {
+    color: #fff;
+}
+
+.cinema__info {
+    padding-top: 10px;
+    display: flex;
+    justify-content: left;
+    gap: 10px;
+    align-items: center;
+}
+
+.cinema__info p {
+    margin: 0;
+    font-size: 14px;
+}
+
+.cinema__logo {
+    width: 50px;
+}
+
+.cinema__full {
+    display: block;
+}
+
+.cinema__time button {
+    border: 1px solid #ccd2d8;
+    color: #ccd2d8;
+    background: transparent;
+    border-radius: 10px;
+    padding: 2px 4px;
+    margin-right: 20px;
+}
+
+@media only screen and (max-width:992px) {
+    .movie__image {
+        display: none;
+    }
+
+}
